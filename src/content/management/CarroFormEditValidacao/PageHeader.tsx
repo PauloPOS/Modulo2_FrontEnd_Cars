@@ -1,0 +1,19 @@
+import { Button, Grid, Typography } from '@mui/material';
+import { useNavigate } from 'react-router';
+
+const PageHeader:React.FC = () =>{
+  const navigate = useNavigate();
+
+  return (
+
+    <Grid container justifyContent="space-between" alignItems="center">
+      <Grid item>
+         <Typography variant="h3" component="h3" gutterBottom>
+           Editar Carro
+         </Typography>
+      </Grid>
+
+    </Grid>
+  );
+}
+export default PageHeader;
